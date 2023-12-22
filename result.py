@@ -39,3 +39,13 @@
 #                     count[i] = count[a]
 #                     del count[a]
 #         return max(count.values()) if count != {} else 1
+
+
+# 1451
+# class Solution:
+#     def arrangeWords(self, text: str) -> str:
+#         result = {}
+#         for i, a in enumerate(text.split()):
+#             result[i] = len(a)
+#         sort = sorted(result, key=result.get)
+#         return ' '.join([str(text.split()[a]) for a in sort]).capitalize()
