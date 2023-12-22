@@ -1,8 +1,7 @@
 class Solution:
-    def superPow(self, a: int, b) -> int:
-        for e in b:
-            print(a ** e)
-        return 1
+    def defangIPaddr(self, address: str) -> str:
+        return address.replace(".", "[.]")
+
 
 test = Solution()
-print(test.superPow(a = 1, b = [4,3,3,8,5,2]))
+print(test.defangIPaddr(address="1.1.1.1"))
