@@ -1,9 +1,6 @@
 class Solution:
-    def canBeEqual(self, target, arr) -> bool:
-        target.sort()
-        arr.sort()
-        return target == arr
+    def runningSum(self, nums):
 
 
 test = Solution()
-print(test.canBeEqual(target = [3,11,9], arr = [3,7,11]))
+print(test.runningSum(nums = [1,2,3,4]))

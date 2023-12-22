@@ -60,6 +60,16 @@
 #         return -1
 
 
+# 1480
+# class Solution:
+#     def runningSum(self, nums):
+#         arr = [0]
+#         for e in nums:
+#             arr.append(arr[-1]+e)
+#         arr.pop(0)
+#         return arr
+
+
 # 1460
 # class Solution:
 #     def canBeEqual(self, target, arr) -> bool:
