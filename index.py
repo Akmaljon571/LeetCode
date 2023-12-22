@@ -1,7 +1,7 @@
-# class Solution:
-#     def (self, operations) -> int:
-#
-#
-#
-# test = Solution()
-# print(test.())
+class Solution:
+    def simplifiedFractions(self, n: int):
+        pass
+
+
+test = Solution()
+print(test.simplifiedFractions(n = 2))
