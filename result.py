@@ -49,3 +49,20 @@
 #             result[i] = len(a)
 #         sort = sorted(result, key=result.get)
 #         return ' '.join([str(text.split()[a]) for a in sort]).capitalize()
+
+
+# 1455
+# class Solution:
+#     def isPrefixOfWord(self, sentence: str, searchWord: str) -> int:
+#         for i, a in enumerate(sentence.split(), start=1):
+#             if a.startswith(searchWord):
+#                 return i
+#         return -1
+
+
+# 1460
+# class Solution:
+#     def canBeEqual(self, target, arr) -> bool:
+#         target.sort()
+#         arr.sort()
+#         return target == arr

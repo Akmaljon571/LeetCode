@@ -1,11 +1,9 @@
 class Solution:
-    def arrangeWords(self, text: str) -> str:
-        result = {}
-        for i, a in enumerate(text.split()):
-            result[i] = len(a)
-        sort = sorted(result, key=result.get)
-        return ' '.join([str(text.split()[a]) for a in sort]).capitalize()
+    def canBeEqual(self, target, arr) -> bool:
+        target.sort()
+        arr.sort()
+        return target == arr
 
 
 test = Solution()
-print(test.arrangeWords(text="Is leetcode cool"))
+print(test.canBeEqual(target = [3,11,9], arr = [3,7,11]))
