@@ -117,3 +117,13 @@
 #             if pref == a[:len(pref)]:
 #                 count += 1
 #         return count
+
+
+# 1281
+# class Solution:
+#     def subtractProductAndSum(self, n: int) -> int:
+#         all_sum = sum(int(e) for e in str(n))
+#         all_kar = 1
+#         for a in str(n):
+#             all_kar *= int(a)
+#         return all_kar - all_sum

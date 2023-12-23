@@ -1,10 +1,11 @@
 class Solution:
-    def prefixCount(self, words, pref: str) -> int:
-        count = 0
-        for a in words:
-            if pref == a[:len(pref)]:
-                count += 1
-        return count
+    def subtractProductAndSum(self, n: int) -> int:
+        all_sum = sum(int(e) for e in str(n))
+        all_kar = 1
+        for a in str(n):
+            all_kar *= int(a)
+        return all_kar - all_sum
+
 
 test = Solution()
-print(test.prefixCount(words = ["leetcode","win","loops","success"], pref = "le"))
+print(test.subtractProductAndSum(n=234))
