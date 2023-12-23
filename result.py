@@ -100,4 +100,10 @@
 #         return ' '.join(a.capitalize() if len(a) > 2 else a.lower() for a in title.split())
 
 
-#
+# 2154
+# class Solution:
+#     def findFinalValue(self, nums, original: int) -> int:
+#         while True:
+#             if original not in nums:
+#                 return original
+#             original = original * 2

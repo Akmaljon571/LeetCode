@@ -1,6 +1,9 @@
 class Solution:
-    def capitalizeTitle(self, title: str) -> str:
-        return ' '.join(a.capitalize() if len(a) > 2 else a.lower() for a in title.split())
+    def findFinalValue(self, nums, original: int) -> int:
+        while True:
+            if original not in nums:
+                return original
+            original = original * 2
 
 test = Solution()
-print(test.capitalizeTitle(title = "capiTalIze tHe titLe"))
+print(test.findFinalValue(nums = [5,3,6,1,12], original = 3))
