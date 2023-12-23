@@ -107,3 +107,13 @@
 #             if original not in nums:
 #                 return original
 #             original = original * 2
+
+
+# 2185
+# class Solution:
+#     def prefixCount(self, words: List[str], pref: str) -> int:
+#         count = 0
+#         for a in words:
+#             if pref == a[:len(pref)]:
+#                 count += 1
+#         return count

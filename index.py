@@ -1,9 +1,10 @@
 class Solution:
-    def findFinalValue(self, nums, original: int) -> int:
-        while True:
-            if original not in nums:
-                return original
-            original = original * 2
+    def prefixCount(self, words, pref: str) -> int:
+        count = 0
+        for a in words:
+            if pref == a[:len(pref)]:
+                count += 1
+        return count
 
 test = Solution()
-print(test.findFinalValue(nums = [5,3,6,1,12], original = 3))
+print(test.prefixCount(words = ["leetcode","win","loops","success"], pref = "le"))
