@@ -127,3 +127,13 @@
 #         for a in str(n):
 #             all_kar *= int(a)
 #         return all_kar - all_sum
+
+
+# 1287
+# class Solution:
+#     def findSpecialInteger(self, arr) -> int:
+#         result = {}
+#         for a in arr:
+#             if a not in result:
+#                 result[a] = arr.count(a)
+#         return max(result, key=result.get)
