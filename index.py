@@ -1,6 +1,6 @@
 class Solution:
-    def isSameAfterReversals(self, num: int) -> bool:
-        return len(str(int(str(num)[::-1]))) == len(str(num))
+    def capitalizeTitle(self, title: str) -> str:
+        return ' '.join(a.capitalize() if len(a) > 2 else a.lower() for a in title.split())
 
 test = Solution()
-print(test.isSameAfterReversals(num = 1800))
+print(test.capitalizeTitle(title = "capiTalIze tHe titLe"))

@@ -92,3 +92,12 @@
 # class Solution:
 #     def isSameAfterReversals(self, num: int) -> bool:
 #         return len(str(int(str(num)[::-1]))) == len(str(num))
+
+
+# 2129
+# class Solution:
+#     def capitalizeTitle(self, title: str) -> str:
+#         return ' '.join(a.capitalize() if len(a) > 2 else a.lower() for a in title.split())
+
+
+#
