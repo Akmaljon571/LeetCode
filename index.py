@@ -1,6 +1,6 @@
 class Solution:
-    def runningSum(self, nums):
-
+    def isSameAfterReversals(self, num: int) -> bool:
+        return len(str(int(str(num)[::-1]))) == len(str(num))
 
 test = Solution()
-print(test.runningSum(nums = [1,2,3,4]))
+print(test.isSameAfterReversals(num = 1800))

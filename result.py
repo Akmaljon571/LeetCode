@@ -76,3 +76,19 @@
 #         target.sort()
 #         arr.sort()
 #         return target == arr
+
+
+# 2114
+# class Solution:
+#     def mostWordsFound(self, sentences) -> int:
+#         count = 0
+#         for a in sentences:
+#             if count < len(a.split()):
+#                 count = len(a.split())
+#         return count
+
+
+# 2119
+# class Solution:
+#     def isSameAfterReversals(self, num: int) -> bool:
+#         return len(str(int(str(num)[::-1]))) == len(str(num))
