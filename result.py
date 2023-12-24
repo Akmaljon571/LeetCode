@@ -179,3 +179,15 @@
 #             if x in a:
 #                 arr.append(i)
 #         return arr
+
+
+# 1470
+# class Solution:
+#     def shuffle(self, nums, n: int):
+#         x = nums[:n]
+#         y = nums[n:]
+#         result = []
+#         for i, a in enumerate(x):
+#             result.append(a)
+#             result.append(y[i])
+#         return result
