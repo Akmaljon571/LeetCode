@@ -197,3 +197,9 @@
 # class Solution:
 #     def sortTheStudents(self, score, k: int):
 #         return sorted(score, key=lambda x: x[k], reverse=True)
+
+
+# 1410
+# class Solution:
+#     def entityParser(self, text):
+#         return text.replace('&quot;', '"').replace('&gt;', '>').replace('&lt;', '<').replace('&apos;', "'").replace('&amp;', '&').replace('&frasl;', '/')
