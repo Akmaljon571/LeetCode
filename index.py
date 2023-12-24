@@ -1,6 +1,10 @@
 class Solution:
-    def sum(self, num1: int, num2: int) -> int:
-        return num1 + num2
+    def numIdenticalPairs(self, nums) -> int:
+        count = 0
+        for i, a in enumerate(nums):
+            count += nums[i+1:].count(a)
+        return count
+
 
 test = Solution()
-print(test.sum())
+print(test.numIdenticalPairs(nums=[1, 1,1,1]))
