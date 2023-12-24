@@ -1,10 +1,7 @@
 class Solution:
-    def findSpecialInteger(self, arr) -> int:
-        result = {}
-        for a in arr:
-            if a not in result:
-                result[a] = arr.count(a)
-        return max(result, key=result.get)
+    def search(self, nums, target: int) -> int:
+        return nums.index(target) if target in nums else -1
+
 
 test = Solution()
-print(test.findSpecialInteger(arr = [1,2,2,6,6,6,6,7,10]))
+print(test.search(nums=[-1, 0, 3, 5, 9, 12], target=1))

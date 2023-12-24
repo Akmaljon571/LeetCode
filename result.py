@@ -137,3 +137,9 @@
 #             if a not in result:
 #                 result[a] = arr.count(a)
 #         return max(result, key=result.get)
+
+
+# 704
+# class Solution:
+#     def search(self, nums, target: int) -> int:
+#         return nums.index(target) if target in nums else -1
