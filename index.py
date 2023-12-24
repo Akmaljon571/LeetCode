@@ -1,6 +1,10 @@
 class Solution:
-    def theMaximumAchievableX(self, num: int, t: int) -> int:
-        return (t*2)+num
+    def findWordsContaining(self, words, x: str):
+        arr = []
+        for i, a in enumerate(words):
+            if x in a:
+                arr.append(i)
+        return arr
 
 test = Solution()
-print(test.theMaximumAchievableX(num = 4, t = 1))
+print(test.findWordsContaining(words = ["leet","code"], x = "e"))

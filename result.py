@@ -169,3 +169,13 @@
 # class Solution:
 #     def theMaximumAchievableX(self, num: int, t: int) -> int:
 #         return (t*2)+num
+
+
+# 2942
+# class Solution:
+#     def findWordsContaining(self, words, x: str):
+#         arr = []
+#         for i, a in enumerate(words):
+#             if x in a:
+#                 arr.append(i)
+#         return arr
