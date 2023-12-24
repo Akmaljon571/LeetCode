@@ -163,3 +163,9 @@
 #         for i, a in enumerate(nums):
 #             count += nums[i+1:].count(a)
 #         return count
+
+
+# 2769
+# class Solution:
+#     def theMaximumAchievableX(self, num: int, t: int) -> int:
+#         return (t*2)+num
