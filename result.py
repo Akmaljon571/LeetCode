@@ -191,3 +191,9 @@
 #             result.append(a)
 #             result.append(y[i])
 #         return result
+
+
+# 2545
+# class Solution:
+#     def sortTheStudents(self, score, k: int):
+#         return sorted(score, key=lambda x: x[k], reverse=True)
