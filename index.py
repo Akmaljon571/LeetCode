@@ -1,19 +1,9 @@
 class Solution:
-    def sortVowels(self, s: str) -> str:
-        unli = 'aeiouAEIOU'
-        index = []
-        unli_arr = []
-        result = [*s]
-        for i, a in enumerate(s):
-            if a in unli:
-                unli_arr.append(a)
-                index.append(i)
-        unli_arr.sort()
-        for i, a in enumerate(unli_arr):
-            result[index[i]] = a
-        return ''.join(str(i) for i in result)
-
+    def minPairSum(self, nums) -> int:
+        nums.sort()
+        return max([x + y for x, y in zip(nums[:len(nums) // 2], nums[len(nums) // 2:][::-1])])
 
 
 test = Solution()
-print(test.sortVowels(s = "lEetcOde"))
+
+
